@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-container fluid>
+    <v-slide-y-transition mode="out-in">
+      <v-layout column align-center>
+        <h1>Online booking for Awesome Cinema</h1>
+        <CinemaComponent></CinemaComponent>
+      </v-layout>
+    </v-slide-y-transition>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  import CinemaComponent from '../components/CinemaComponent';
+  export default {
+      name: 'Home',
+      data () {
+          return {
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
+          }
+      },
+      components: { CinemaComponent }
   }
-}
 </script>
+<style scoped>
+
+</style>
