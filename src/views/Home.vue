@@ -13,11 +13,6 @@
   import CinemaComponent from '../components/CinemaComponent';
   export default {
       name: 'Home',
-      data () {
-          return {
-
-          }
-      },
       components: { CinemaComponent }
   }
 </script>
